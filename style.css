@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Electrolize', sans-serif;
+}
+body{
+    background-color: rgb(27, 27, 27);
+    color: white;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#clock{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+}
+#clock h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.clock-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 20px;
+    flex-direction: row;
+}
+.clock-items{
+    background-color: white;
+    width: 140px;
+    padding: 22px;
+    color: black;
+    border-radius: 12px;
+    font-size: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#date{
+    margin-top: 40px;
+    font-size: 30px;
+}
+@media (max-width: 425px) {
+    #clock h1{
+        font-size: 30px;
+    }
+    .clock-items{
+        width: 90px;
+        font-size: 40px;
+        font-weight: 600;
+    }
+    #date{
+        font-size: 30px;
+    }
+}
+@media (max-width: 320px) {
+    #clock h1{
+        font-size: 30px;
+    }
+    .clock-items{
+        width: 80px;
+        font-size: 34px;
+        font-weight: 600;
+    }
+    #date{
+        font-size: 26px;
+    }
+}
